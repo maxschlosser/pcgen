@@ -26,7 +26,7 @@ plugins {
     id 'idea'
     id "de.undercouch.download" version '4.0.0'
     id 'edu.sc.seis.launch4j' version '2.4.6'
-    id 'com.github.ben-manes.versions' version '0.26.0'
+    id 'com.github.ben-manes.versions' version '0.27.0'
     id "com.dorongold.task-tree" version '1.4'
     id "edu.sc.seis.macAppBundle" version "2.3.0"
     id 'org.openjfx.javafxplugin' version '0.0.8'
@@ -197,7 +197,7 @@ dependencies {
     testImplementation group: 'org.junit.jupiter', name:  'junit-jupiter-params', version: '5.5.2'
     testImplementation group: 'org.junit.jupiter', name:  'junit-jupiter-params', version: '5.5.2'
     testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.5.2'
-    testImplementation group: 'org.hamcrest', name: 'hamcrest', version: '2.1'
+    testImplementation group: 'org.hamcrest', name: 'hamcrest', version: '2.2'
     testCompile group: 'org.testfx', name: 'testfx-junit5', version: '4.0.16-alpha'
     testCompile group: 'org.testfx', name: 'openjfx-monocle', version: 'jdk-12.0.1+2'
 

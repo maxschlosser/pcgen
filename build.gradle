@@ -19,18 +19,18 @@ plugins {
     id 'application'
     id 'build-dashboard'
     id 'checkstyle'
-    id "com.github.spotbugs" version '2.0.0'
+    id "com.github.spotbugs" version '2.0.1'
     id 'java'
     id 'maven'
     id 'pmd'
     id 'idea'
-    id "de.undercouch.download" version '4.0.0'
+    id "de.undercouch.download" version '4.0.1'
     id 'edu.sc.seis.launch4j' version '2.4.6'
     id 'com.github.ben-manes.versions' version '0.27.0'
     id "com.dorongold.task-tree" version '1.4'
     id "edu.sc.seis.macAppBundle" version "2.3.0"
     id 'org.openjfx.javafxplugin' version '0.0.8'
-    id 'org.beryx.runtime' version '1.7.0'
+    id 'org.beryx.runtime' version '1.8.0'
 }
 
 javafx {
@@ -90,6 +90,9 @@ repositories {
     ivy {
         name "fileRepo"
         url 'http://pc-gen.org/librepo/'
+    }
+    maven {
+        url "https://repository.jboss.org/nexus/content/repositories/thirdparty-releases/"
     }
     jcenter()
 }
@@ -169,11 +172,11 @@ compileJava {
 dependencies {
     compile group: 'commons-io', name: 'commons-io', version:'2.6'
 
-    compile group: 'org.springframework', name: 'spring-web', version:'5.2.0.RELEASE'
-    compile group: 'org.springframework', name: 'spring-core', version:'5.2.0.RELEASE'
-    compile group: 'org.springframework', name: 'spring-beans', version:'5.2.0.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version:'5.2.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-core', version:'5.2.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-beans', version:'5.2.1.RELEASE'
     compile group: 'org.apache.commons', name: 'commons-lang3', version:'3.9'
-    compile group: 'org.apache.xmlgraphics', name: 'fop', version:'2.3'
+    compile group: 'org.apache.xmlgraphics', name: 'fop', version:'2.4'
     compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
     compile group: 'jep', name: 'jep', version:'2.4.1'
     compile group: 'org.freemarker', name: 'freemarker', version:'2.3.29'
@@ -187,7 +190,7 @@ dependencies {
     compile group: 'net.sourceforge.pcgen', name: 'PCGen-base', version:'1.0.170'
     compile group: 'net.sourceforge.pcgen', name: 'PCGen-Formula', version:'1.0.200'
 
-    compileOnly group: 'org.jetbrains', name: 'annotations', version:'17.0.0'
+    compileOnly group: 'org.jetbrains', name: 'annotations', version:'18.0.0'
     compileOnly group: 'com.yuvimasory', name: 'orange-extensions', version: '1.3.0'
     compileOnly group: 'com.github.spotbugs', name: 'spotbugs-annotations', version: '3.1.12'
 
